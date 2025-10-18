@@ -32,9 +32,11 @@ It shows how large transformer models can be trained efficiently on consumer GPU
 
 ## 📈 Results
 
-Optimizer	Scheduler	Eval Loss	Accuracy	F1-Score	Runtime (s)	Samples/sec
-adamw_torch	linear	0.565	72.9%	76.9%	4.49	194.3
-adafactor	cosine	0.534	75.3%	78.0%	4.20	207.7
+| Optimizer      | Scheduler | Eval Loss | Accuracy | F1-Score | Runtime (s) | Samples/sec |
+|----------------|-----------|-----------|----------|----------|-------------|-------------|
+| adamw_torch    | linear    | 0.565     | 72.9%    | 76.9%    | 4.49        | 194.3       |
+| adafactor      | cosine    | 0.534     | 75.3%    | 78.0%    | 4.20        | 207.7       |
+
 
 ✅ Best Experiment: Optimizer = adafactor, Scheduler = cosine
 
