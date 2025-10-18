@@ -32,11 +32,13 @@ It shows how large transformer models can be trained efficiently on consumer GPU
 
 ## 📈 Results
 
-| Metric | Value |
-|:-------|:------|
-| **Accuracy** | ~72.9% |
-| **F1-Score** | ~76.9% |
-| **Loss Trend** | Steady decrease, showing good learning |
+Optimizer	Scheduler	Eval Loss	Accuracy	F1-Score	Runtime (s)	Samples/sec
+adamw_torch	linear	0.565	72.9%	76.9%	4.49	194.3
+adafactor	cosine	0.534	75.3%	78.0%	4.20	207.7
+
+✅ Best Experiment: Optimizer = adafactor, Scheduler = cosine
+
+Interpretation: Hyperparameter choices (optimizer & scheduler) significantly impact performance. Multiple experiments on modest GPUs are feasible thanks to QLoRA and bitsandbytes.
 
 ---
 
