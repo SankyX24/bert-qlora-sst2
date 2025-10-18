@@ -556,4 +556,4 @@ dependencies:
       - websockets==15.0.1
       - widgetsnbextension==4.0.14
       - xxhash==3.5.0
-prefix: C:\Users\mrnem\anaconda3
+
